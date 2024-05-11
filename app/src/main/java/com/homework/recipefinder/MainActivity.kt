@@ -1,4 +1,4 @@
-package com.example.deneme31
+package com.homework.recipefinder
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,21 +10,14 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.deneme31.ui.theme.Deneme31Theme
+import com.app.RecipeFinderApp
+import com.homework.recipefinder.ui.theme.RecipeFinderTheme
 
-class MainActivity2 : ComponentActivity() {
+class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+       // super.onCreate(savedInstanceState)
         setContent {
-            Deneme31Theme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
-                }
-            }
+            RecipeFinderApp()
         }
     }
 }
@@ -40,7 +33,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    Deneme31Theme {
+    RecipeFinderTheme {
         Greeting("Android")
     }
 }

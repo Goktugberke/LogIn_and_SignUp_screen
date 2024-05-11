@@ -1,4 +1,4 @@
-package com.example.deneme31.ui.theme
+package com.homework.recipefinder.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
